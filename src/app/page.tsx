@@ -1,4 +1,3 @@
-import Test from "@/components/Hero";
 import Hero from "@/sections/Hero";
 import { TSections } from "@/src/types";
 
@@ -9,7 +8,7 @@ export default function Home() {
       <div className="container">
         <Hero />
         <h1 className="text-black">Template1{abc}</h1>
-        <Test />
+
         <p className="font-montserrat">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           totam a voluptatem autem minus deleniti, suscipit amet, incidunt illum

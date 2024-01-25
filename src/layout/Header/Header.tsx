@@ -1,7 +1,14 @@
+import Logo from "@/components/ui/Logo";
+
 const Header = () => {
   return (
     <>
-      <header className="relative z-20 pb-6 pt-[22px] md:py-9">header</header>
+      <header className="flex-between w-full">
+        <div className="flex-between container w-full">
+          <Logo />
+          <span>header</span>
+        </div>
+      </header>
     </>
   );
 };
