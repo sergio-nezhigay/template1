@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Template NextJs+Tailwind :tada::white_flower::cherry_blossom::candy:
 
-## Getting Started
+**[Переглянути живу сторінку](https://gift-studio.vercel.app/)**
 
-First, run the development server:
+### Структура проєкту
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<details>
+
+<summary><b>Організація проєкту та Розташування Файлів: </b></summary>
+<br/>
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+|-- public -> статичні файли
+|-- admin -> директорія із базовим кодом CMS
+  |-- requests --> отримання динамічних даних
+  |-- schemas --> схеми моделювання
+  даних CMS
+|-- src -> директорія із вихідним кодом основної
+програми
+  |-- app ->  маршрутизація
+    |-- (site) --> група маршрутів для
+    головного інтерфейсу
+    |-- (studio) --> група маршрутів для вбудованої CMS
+  |-- components -> директорія зі зручними компонентами
+    |-- NameComponent -> базові компоненти
+    секцій/блоків (слайдер і т.д.)
+    |-- ui -> невеликі, зручні компоненти
+    (кнопки, логотипи і т.д.)
+      |-- NameComponent -> папка для кожного компонента
+        |-- NameComponent.tsx -> основний компонент
+        |-- index.ts -> файл для повторного
+        експорту
+        |-- types.ts -> файл для спеціальних типів компонентів (параметри)
+  |-- layout -> компоненти, які використовуються як основний шаблон
+  |-- sections ->
+  директорія із компонентами секцій
+  |-- data -> статичні дані для проєкту (json)
+  |-- types -> директорія
+  зі зручними визначеннями типів
+  |-- utils -> додаткові, зручні функції для сторінок та компонентів
+  |-- constants -> директорія із константами
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+</details>
 
-## Learn More
+## 🧩 Технології
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js**: Фреймворк React для розробки високопродуктивних веб-сайтів та
+  застосунків.
+- **TypeScript**: Мова програмування, яка додає статичний аналіз типів до
+  JavaScript.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Стилізація
 
-## Deploy on Vercel
+- **Tailwind CSS**: Утиліта для створення власних дизайнів інтерфейсу,
+  використовуючи лише HTML та CSS.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### CMS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Sanity**: Headless CMS для створення, управління та доставки цифрових
+  змістів.
+
+### Бібліотеки
+
+- **Swiper**: Сучасна бібліотека для роботи зі слайдерами та каруселями.
+- **React Scroll**: Бібліотека для реалізації плавного прокручування до розділів
+  сайту.
+
+### Структура проєкту
+
+```mermaid
+graph LR
+
+  Z{Вхід} --> A((Головна сторінка))
+  A --> B[Header]
+  A --> C[Секція 1. Hero]
+  A --> D[Секція 2. Про нас]
+  A --> E[Секція 3. Послуги]
+  A --> F[Секція 4. Переваги]
+  A --> G[Секція 5. FAQ]
+  A --> H[Секція 6. Відгуки]
+  A --> I[Секція 7. Галерея]
+  A --> J[Футер]
+```
+
+## ☎️ Контакти
+
+**Example** готовий відповісти на ваші питання та надати додаткову інформацію:
+
+- **Веб-сайт**: [www.example.com](https://www.example.com/)
+- **Телефон**: <a href="tel:+3809999">+380987654321</a>
+- **Електронна пошта**: [example@example.com](mailto:example@example.com)
