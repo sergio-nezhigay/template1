@@ -1,4 +1,5 @@
 import Hero from "@/sections/Hero";
+
 import { TSections } from "@/src/types";
 
 export default function Home() {

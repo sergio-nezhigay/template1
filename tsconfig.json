@@ -21,6 +21,7 @@
     "paths": {
       "@/admin/*": ["admin/*"],
       "@/components/*": ["src/components/*"],
+      "@/layout/*": ["src/layout/*"],
       "@/utils/*": ["src/utils/*"],
       "@/sections/*": ["src/sections/*"],
       "@/lib/*": ["src/lib/*"],

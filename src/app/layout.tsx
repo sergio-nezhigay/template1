@@ -1,14 +1,14 @@
-import type { Metadata, Viewport } from "next";
 import React from "react";
+import { Metadata, Viewport } from "next";
 
-import Footer from "@/src/layout/Footer";
-import Header from "@/src/layout/Header";
-
-import { caveat, montserrat } from "@/src/app/fonts";
-
-import "@/src/app/globals.css";
+import Footer from "@/layout/Footer";
+import Header from "@/layout/Header";
 
 import meta from "@/data/meta";
+
+import { caveat, montserrat } from "./fonts";
+
+import "@/src/app/globals.css";
 
 export const metadata: Metadata = meta;
 
