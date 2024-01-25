@@ -3,12 +3,12 @@ import Hero from "@/sections/Hero";
 import { TSections } from "@/src/types";
 
 export default function Home() {
-  let abc: TSections;
+  const abc: TSections = "hero";
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="container">
         <Hero />
-        <h1 className="text-black">Template1</h1>
+        <h1 className="text-black">Template1{abc}</h1>
         <Test />
         <p className="font-montserrat">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae

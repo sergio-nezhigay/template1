@@ -1,1 +1,6 @@
-export type TSections = "advantages" | "feedback" | "gallery" | "services";
+export type TSections =
+  | "hero"
+  | "advantages"
+  | "feedback"
+  | "gallery"
+  | "services";
